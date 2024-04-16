@@ -2,8 +2,10 @@ import { SplashScreen } from "@capacitor/splash-screen";
 import { Camera } from "@capacitor/camera";
 import Echo from "./echo";
 
-const { value } = await Echo.echo({ value: "Hello World!" });
-console.log("Response from native:", value);
+console.log("DEBUG start");
+Echo.echo({ value: "Hello World!" }).then(({ value }) =>
+  console.log("Response from native:", value)
+);
 
 window.customElements.define(
   "capacitor-welcome",
@@ -95,6 +97,8 @@ window.customElements.define(
 
     connectedCallback() {
       const self = this;
+
+      console.log("DEBUG connectedCallback()");
 
       self.shadowRoot
         .querySelector("#take-photo")
