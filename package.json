@@ -20,8 +20,7 @@
     "@capacitor/camera": "latest",
     "@capacitor/core": "latest",
     "@capacitor/ios": "^6.0.0",
-    "@capacitor/splash-screen": "latest",
-    "react-iframe": "^1.8.5"
+    "@capacitor/splash-screen": "latest"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",
