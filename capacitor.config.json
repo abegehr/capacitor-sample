@@ -1,0 +1,10 @@
+{
+  "appId": "me.begehr.capacitorsample",
+  "appName": "capacitor-sample",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
